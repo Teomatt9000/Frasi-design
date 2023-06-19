@@ -21,6 +21,7 @@ header h1 {
 
 #logo {
   grid-column: 1/4;
+  font-family: helvetica;
 }
 
 a {
@@ -49,6 +50,8 @@ a:hover {
   margin-top: 20px;
   margin-left: 30px;
   grid-column: 9/10;
+  font-family: helvetica;
+
 }
 
 .sources {
