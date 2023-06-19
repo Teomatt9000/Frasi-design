@@ -48,15 +48,21 @@ function draw() {
 	textAlign(CENTER);
 
 	// Ottieni l'indice del font corrispondente alla frase corrente
-	const fontStyle = fontStyles[frasi.indexOf(miaFrase)];
-	const fontName = fontStyle.fontName;
+	const fontStyleIndex = frasi.indexOf(miaFrase);
+	if (fontStyleIndex !== -1) {
+		const fontStyle = fontStyles[fontStyleIndex];
+		const fontName = fontStyle.fontName;
 
-	textFont(fontName); // Imposta il font corretto per la frase
+		// Usa fontName per impostare il font del testo
+		textFont(fontName);
+	}
 
 	text(miaFrase, width / 2, height / 2);
 
 	hand();
 }
+
+
 
 async function hand() {
 	scale(windowWidth / 640);
