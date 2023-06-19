@@ -14,7 +14,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
 
 	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Outfit:wght@500&display=swap" rel="stylesheet');
 	</style>
 
 	<script> 
@@ -32,15 +32,18 @@ let capture;
 let detector;
 
 const frasi = [
-	"Fai attenzione a ciò che gli utenti fanno,\n non a ciò che dicono. - Jackob Nielsen -",
-	"Progettare un prodotto è progettare una relazione. - Steve Rogers -",
-	"Se pensi che un buon design sia costoso, dovresti considerare il costo di un cattivo design. - Ralf Speth -"
+	"Fai attenzione a ciò che gli utenti fanno,\n non a ciò che dicono.\n- Jackob Nielsen -",
+	"Progettare un prodotto è progettare una relazione.\n- Steve Rogers -",
+	"Se pensi che un buon design sia costoso,\n dovresti considerare il costo di un cattivo design.\n- Ralf Speth -"
+	
+	
 ];
 
 const fontStyles = [
-	{ fontName: 'Roboto', phraseIndex: 0 },
+	{ fontName: 'Outfit', phraseIndex: 0 },
 	{ fontName: 'Helvetica', phraseIndex: 1 },
 	{ fontName: 'Libre Baskerville', phraseIndex: 2 }
+	
 ];
 
 let miaFrase;
@@ -64,7 +67,7 @@ async function setup() {
 
 function draw() {
 	fill(10);
-	textSize(25);
+	textSize(30);
 	textAlign(CENTER);
 
 	// Ottieni l'indice del font corrispondente alla frase corrente
